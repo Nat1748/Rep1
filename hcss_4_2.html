@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tab1 {
+            background-color: cornflowerblue;
+            text-align: left;
+            border-collapse: separate;
+            border-spacing: 5px;
+            border: 16px;
+            empty-cells: hide
+        }
+
+        .tab1 td {
+            text-decoration-line: underline;
+            background-color: white;
+        }
+
+        .tab2 th {
+            background-color: grey;
+            text-align: center;
+        }
+
+        .tab2 tr:nth-of-type(odd) {
+            background-color: aqua;
+        }
+
+        .tab2 tr:nth-of-type(even) {
+            background-color: lightpink;
+        }
+
+        .tab2 tr:nth-of-type(2) {
+            background-color: green;
+        }
+
+        .tab3 td {
+            width: 20px;
+            height: 20px
+        }
+
+        .tab3 tr:nth-of-type(odd) td:nth-of-type(even) {
+            background-color: aquamarine;
+        }
+
+        .tab3 tr:nth-of-type(odd) td:nth-last-of-type(odd) {
+            background-color: rebeccapurple;
+        }
+
+        .tab3 tr:nth-of-type(even) td:nth-of-type(even) {
+            background-color: rebeccapurple
+        }
+
+        .tab3 tr:nth-of-type(even) td:nth-of-type(odd) {
+            background-color: aquamarine
+        }
+
+        .tab4 {
+            border: 2px, solid black;
+            text-align: left;
+        }
+
+        .tab4 td:nth-of-type(1)::first-letter {
+            background-color: pink;
+        }
+
+        .tab4 td:nth-of-type(2n)::first-letter {
+            background-color: brown
+        }
+
+        .tab4 td:nth-of-type(3n)::first-letter {
+            background-color: blue
+        }
+
+        .tab4 td:nth-of-type(4n):first-letter {
+            background-color: green;
+        }
+
+        .poems p:nth-of-type(even) {
+            color: red;
+            font-weight: bold
+        }
+
+        .poems p:nth-of-type(odd) {
+            color: brown;
+            font-weight: bold
+        }
+
+        .loram p::first-letter {
+            color: red
+        }
+
+        .loram p:nth-of-type(2) {
+            color: green
+        }
+        .tab5 th{
+            background-color: green;
+            padding: 10px;
+        }
+        .tab5 tr:nth-of-type(even){background-color: violet};
+    </style>
+</head>
+
+<body>
+    <table class="tab1">
+        <tr>
+            <th>Правка</th>
+            <th>Начертание</th>
+            <th>Размер</th>
+        </tr>
+        <tr>
+            <td>Отменить</td>
+            <td>Жирное</td>
+            <td>Маленький</td>
+        </tr>
+        <tr>
+            <td>Вырезать</td>
+            <td>Курсивное</td>
+            <td>Нормальный</td>
+        </tr>
+        <tr>
+            <td>Копировать</td>
+            <td>Подчеркнутое</td>
+            <td>Средний</td>
+        </tr>
+        <tr>
+            <td>Вставить</td>
+            <td></td>
+            <td>Большой</td>
+        </tr>
+    </table>
+
+    <table class="tab2">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+
+        </tr>
+        <tr>
+            <td>p/p</td>
+            <td>месяц</td>
+            <td>д1</td>
+            <td>д2</td>
+            <td>д3</td>
+            <td>д4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>january</td>
+            <td>12</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>february</td>
+            <td></td>
+            <td></td>
+            <td>aa</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>march</td>
+            <td>345</td>
+            <td></td>
+            <td>6952</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>april</td>
+            <td>678</td>
+            <td></td>
+            <td>--b</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>may</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>june</td>
+            <td>1011</td>
+            <td>1011</td>
+            <td>1011</td>
+            <td>1011</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>july</td>
+            <td>1344</td>
+            <td>1344</td>
+            <td>1344</td>
+            <td>1344</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>august</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>september</td>
+            <td>1677</td>
+            <td>43</td>
+            <td>883</td>
+            <td>876</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>october</td>
+            <td>2010</td>
+            <td></td>
+            <td>===</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>november</td>
+            <td></td>
+            <td>786</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>december</td>
+            <td>2343</td>
+            <td></td>
+            <td></td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>january</td>
+            <td>2676</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+    <table class="tab3">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+    <table class="tab4" , border="2px">
+        <tr>
+            <td>124</td>
+            <td>202</td>
+            <td>1200</td>
+            <td>209</td>
+            <td>385</td>
+            <td>289</td>
+            <td>12,4</td>
+            <td>22,8</td>
+        </tr>
+        <tr>
+            <td>124</td>
+            <td>202</td>
+            <td>1200</td>
+            <td>209</td>
+            <td>385</td>
+            <td>289</td>
+            <td>12,4</td>
+            <td>22,8</td>
+        </tr>
+        <tr>
+            <td>124</td>
+            <td>202</td>
+            <td>1200</td>
+            <td>209</td>
+            <td>385</td>
+            <td>289</td>
+            <td>12,4</td>
+            <td>22,8</td>
+        </tr>
+        <tr>
+            <td>124</td>
+            <td>202</td>
+            <td>1200</td>
+            <td>209</td>
+            <td>385</td>
+            <td>289</td>
+            <td>12,4</td>
+            <td>22,8</td>
+        </tr>
+        <tr>
+            <td>124</td>
+            <td>202</td>
+            <td>1200</td>
+            <td>209</td>
+            <td>385</td>
+            <td>289</td>
+            <td>12,4</td>
+            <td>22,8</td>
+        </tr>
+        <tr>
+            <td>124</td>
+            <td>202</td>
+            <td>1200</td>
+            <td>209</td>
+            <td>385</td>
+            <td>289</td>
+            <td>12,4</td>
+            <td>22,8</td>
+        </tr>
+
+    </table>
+    <div class="poems">
+        <p>Вселенная вздыхала, наблюдая</p>
+        <p>За злобой и за глупостью людей… </p>
+        <p>Они делили земли, не взирая </p>
+        <p>На то, что нет у них земли своей… </p>
+        <p>Мы – гости, нас пожить сюда пустили… </p>
+        <p>Останутся и реки, и леса… </p>
+        <p> А мы уйдём, как будто и не жили…</p>
+        <p>Смеялись с нас веками небеса… </p>
+
+    </div>
+    <div class="loram">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis ultrices lectus placerat mollis.
+            Nulla vestibulum eros metus, id faucibus est imperdiet non. Maecenas nisi sapien, egestas sed ipsum eu,
+            volutpat efficitur massa. Interdum et malesuada fames ac ante ipsum primis in fauci.
+            Cras ipsum lacus, viverra quis pulvinar ullamcorper, dignissim consequat libero. Aenean sit amet arcu
+            tincidunt elit accumsan rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Duis condimentum vel augue nec luctus. Orci varius natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Cras elit diam, condimentum non volutpat eget, dictum non diam. In lacinia
+            nulla nec magna congue, eu rutrum lectus eleifend. Donec iaculis accumsan eros a varius. Donec finibus diam
+            a mauris eleifend mattis non vel leo. Vivamus sit amet urna ut orci fringilla pulvinar ornare et lacus.
+            Nulla in ligula turpis.
+        </p>
+        <p>Ut eleifend sollicitudin pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
+            augue libero. Praesent nec blandit ante. Nulla ut nibh nisl. Integer scelerisque ac nibh eu interdum. In
+            hac
+            habitasse platea dictumst. Curabitur eget est in risus aliquet porttitor vel ac risus. Etiam condimentum
+            augue non urna vestibulum consectetur. Donec id urna enim.</p>
+        <p>Ut eleifend elit id sem congue iaculis. Fusce pretium enim eget porta mattis. Fusce pharetra risus massa,
+            sed eleifend magna consequat vitae. Nam lobortis condimentum ex, ut sagittis nisl varius et. Proin volutpat
+            tortor id dui ullamcorper, ut pellentesque dolor consectetur. Pellentesque ut velit et eros viverra pretium.
+            Quisque imperdiet felis id diam tristique iaculis. Nam gravida odio quam, ut tincidunt lorem blandit a.
+            Quisque gravida lorem vel leo mattis, et consectetur turpis condimentum. Aliquam aliquet metus erat, a
+            auctor sem commodo quis. Donec malesuada neque sit amet facilisis lacinia. Morbi congue elit nec purus
+            ultrices, sed lobortis ex cursus. Proin convallis arcu viverra, tincidunt enim sit amet, accumsan diam.
+            Aenean vitae ex mi. Aenean eu tellus dignissim, facilisis dui et, euismod dui. Pellentesque malesuada
+            fermentum purus, quis vulputate libero sodales nec.
+        </p>
+        <table class="tab5" border="2px" solid black>
+                <tr>
+                    <th>Название</th>
+                    <th>Цвет</th>
+                    <th>Твердость по Моосу</th>
+                </tr>
+                <tr>
+                    <td>Алмаз</td>
+                    <td>белый</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Рубин</td>
+                    <td>Красный</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Аметист</td>
+                    <td>Голубой</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Изумруд</td>
+                    <td>Зеленый</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Сапфир</td>
+                    <td>Голубой</td>
+                    <td>9</td>
+                </tr>
+            </table>
+
+
+
+    </div>
+</body>
+
+</html>
