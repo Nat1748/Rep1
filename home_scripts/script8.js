@@ -1,4 +1,4 @@
-var year = +prompt("Вкажіть рік", "0000")
+var year = +prompt("Вкажіть рік", "0000")  Зробіть простіше (одним рядком без функцій і іf)
 function isCentury(year){
 return year % 100 === 0;
 }
