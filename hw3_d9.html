@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //вводиться кількість сторін багатокутника. Необхідно вивести назву фігури
+        var a=parseInt(prompt("введіть кількість сторін"))
+        switch (a) {
+            case 3:
+                document.write("Трикутник")
+                break;
+                case 4:
+                document.write("Чотирикутник")
+                break;
+                case 5:
+                document.write("Пятикутник")
+                break;
+                case 6:
+                document.write("Шестикутник")
+                break;
+        
+            default:document.write("Помилка вводу")
+                break;
+        }
+
+    </script>
+    <hr>
+    <script>
+        //оцінка за екзамен  , як ціле число. Вивести на екран оцінку прописом
+        var a=parseInt(prompt("введіть оцінку"))
+        switch (a) {
+            case 1:
+                document.write("Незадовільно")
+                break;
+                case 2:
+                document.write("Незадовільно")
+                break;
+                case 3:
+                document.write("Задовільно")
+                break;
+                case 4:
+                document.write("Добре")
+                break;
+                case 5:
+                document.write("Відмінно")
+                break;
+        
+            default:document.write("Помилка вводу")
+                break;
+        }
+    </script>
+    <hr>
+    <script>
+        //вводиться номер місяця. Необхідно вивести кількість днів 
+        var a = parseInt(prompt("введіть  номер місяця"))
+        switch (a) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.write("31")
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.write("30")
+                break;
+            case 2:
+                document.write("28")
+                break;
+            default: document.write("Помилка вводу")
+                break;
+        }
+    </script>
+    <hr>
+    <script>
+        //вводиться символ, що є літерою українського алфавіту. 
+        var a = prompt("введіть літеру")
+        switch (a) {
+            case 'а':
+            case 'о':
+            case 'у':
+            case 'і':
+            case 'и':
+            case 'е':
+                document.write("Голосна")
+                break;
+            default: document.write("Приголосна")
+                break;
+        }
+            </script>
+            <hr>
+    <script>
+                //дні тижня
+                var a = parseInt(prompt("Введіть номер дня"))
+                switch (a) {
+                    case 1: document.write("Понеділок")
+                        
+                        break;
+                        case 2: document.write("Вівторок")
+                        
+                        break;
+                        case 3: document.write("Середа")
+                        
+                        break;
+                        case 4: document.write("Четверг")
+                        
+                        break;
+                        case 5: document.write("Пятниця")
+                        
+                        break;
+                        case 6: document.write("Субота")
+                        
+                        break;
+                        case 7: document.write("Неділя")
+                        
+                        break;
+                
+                    default:document.write("Помилка вводу")
+                        break;
+                }
+                
+            </script>
+            <hr>
+    <script>
+                //дні тижня
+                var a = parseInt(prompt("Введіть номер місяця"))
+                switch (a) {
+                    case 1: document.write("Січень")
+                        
+                        break;
+                        case 2: document.write("Лютий")
+                        
+                        break;
+                        case 3: document.write("Березень")
+                        
+                        break;
+                        case 4: document.write("Квітень")
+                        
+                        break;
+                        case 5: document.write("Травень")
+                        
+                        break;
+                        case 6: document.write("Червень")
+                        
+                        break;
+                        case 7: document.write("Липень")
+                        
+                        break;
+                        case 8: document.write("Серпень")
+                        
+                        break;
+                        case 9: document.write("Вересень")
+                        
+                        break;
+                        case 10: document.write("Жовтень")
+                        
+                        break;
+                        case 11: document.write("Листопад")
+                        
+                        break;
+                        case 12: document.write("Грудень")
+                        
+                        break;
+                
+                    default:document.write("Помилка вводу")
+                        break;
+                }
+            </script>
+            <hr>
+    <script>
+        //пори року
+        var a = parseInt(prompt("Введіть номер місяця"))
+        switch (a) {
+            case 1:
+            case 2:
+            case 12: document.write("Зима")
+                break;
+            case 3:
+            case 4:
+            case 5: document.write("Весна")
+            break;
+            case 6:
+            case 7:
+            case 8: document.write("Літо")
+            break;
+            case 9:
+            case 10:
+            case 11: document.write("Осінь")
+                break;
+
+            default: document.write("Помилка вводу")
+                break;
+        }
+    </script>
+    <hr>
+    <script>
+        //робочі та вихідні дні
+        var a = parseInt(prompt("Введіть номер дня"))
+        switch (a) {
+            case 1:
+            case 2:
+            case 3: 
+            case 4:
+            case 5: document.write("Робочі")
+            break;
+            case 6:
+            case 7: document.write("Вихідні")
+            break;
+            
+            default: document.write("Помилка вводу")
+                break;
+        }
+
+    </script>
+    <hr>
+    <script>
+        //категорія прав
+         var car = prompt("Введіть категорію")
+        switch (car) {
+            case 'A': document.write("мотоцикли та моторолери")
+                break;
+            case 'B': document.write("легкові авто.");
+               break;
+            case 'C': document.write("вантажні авто .");
+               break;
+           case 'D': document.write("автобуси.");
+               break;
+            default:document.write("error");
+                break;
+        }
+    </script>
+    <hr>
+    <script>
+        //розширення файлів
+        var a = prompt("Введіть першу літеру розширення файла ", "h,j,m,d,x")
+        switch (a) {
+            case 'h':document.write("Google Chrome")
+                
+                break;
+                case 'j': document.write("Paint")
+                break;
+                case 'm':document.write("MP3 Player")
+                
+                break;
+                case 'd':document.write("Microsoft Word")
+                
+                break;
+                case 'x':document.write("Microsoft Excel")
+                
+                break;
+        
+            default:document.write("error");
+                break;
+        }
+
+    </script>
+    <script>
+            //Найбільше серед двох різних замінити на 0.
+            var a = prompt("Введіть перше число", "0")
+            var b = prompt("Введіть друге число", "0")
+            if(a>b){
+               a=0
+               document.write( " Перше число замінюється на 0")
+            }
+                else {
+                    b=0
+                    document.write(" Друге число замінюється на 0")
+                }
+    
+        </script>
+    
+        <script>
+            //Найбільше серед двох замінити на 0. Якщо однакові, то замінити обидва на 1
+            var a = prompt("Введіть перше число", "0")
+            var b = prompt("Введіть друге число", "0")
+            if(a>b){
+                a=0
+                document.write( " Перше число замінюється на 0") 
+            }
+                else {
+                    if (b>a) 
+                     document.write( "Друге число замінюється на 0")
+                    else(a=b)
+                    document.write( "Оба числа замінюються на 1")
+                }
+        </script>
+    
+        <script>
+            //З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше лотерею за 4 грн.
+            var price = prompt("Вкажіть ціну товара")
+            var money = prompt("Вкажіть кількість грошей")
+            if (price>money) 
+                document.write("Вибачте, але змушені відмовити Вам в покупці")
+            else (money>price)
+                document.write("Бажаєте придбати лотерейний квиток за 4 грн?")
+         
+        </script>
+    
+        <script>
+            //вводиться назва категорії водія. Вивести на екран назву транспортного засобу
+            var car = prompt("Введіть категорію")
+            switch (car) {
+                case 'A1': document.write("мопеди і триколісний транспорт. Обмеження за обсягом двигуна до 50 см³, або з потужністю до 4 кВт.")
+                    break;
+                case 'A': document.write("мотоцикли (об’єм двигуна може перевищувати 50 см³, потужність — може перевищувати 4 кВт).")
+                    break;
+                case 'B': document.write("легкові авто. Обмеження по масі — до 3,5 тонн, за кількістю пасажирських сидінь — до 8.");
+                   break;
+               case 'C1': document.write("вантажні авто. Обмеження по масі — від 3.5 до 7.5 тонн.");
+                   break;
+               case 'C': document.write("вантажні авто масою понад 7.5 тонн.");
+                   break;
+               case 'D1': document.write("автобуси з кількістю пасажирських сидінь до 16.");
+                   break;
+                default:document.write("error");
+                    break;
+            }
+        </script>
+    
+        <script>
+            //обчислити операцію
+            var a = parseInt(prompt("Введіть перше число")) 
+            var b = parseInt(prompt("Введіть друге число")) 
+            var c= parseInt(prompt("Введіть номер операції від 1 до 4")) 
+            switch (c) {
+                    case 1 :document.write( "Відповідь становить" + (a+b)); 
+                    break;
+                    case 2:document.write("Відповідь становить" + (a-b)) 
+                    break;
+                    case 3: document.write("Відповідь становить" + a*b);
+                    break;
+                    case 4: document.write("Відповідь становить" + a / b);
+                    break;
+                    default:document.write("Error");
+                    break;
+            }
+        </script>
+        <script>
+            //обчислити операцію
+            var a = parseInt(prompt("Введіть перше число")) 
+            var b = parseInt(prompt("Введіть друге число")) 
+            var c= prompt("Введіть назву операції") 
+            switch (c) {
+                    case "Додавання" :document.write( "Відповідь становить" + (a+b)); 
+                    break;
+                    case "Віднімання":document.write("Відповідь становить" + (a-b)) 
+                    break;
+                    case "Множення": document.write("Відповідь становить" + a*b);
+                    break;
+                    case "Ділення": document.write("Відповідь становить" + a / b);
+                    break;
+                    default:document.write("Error");
+                    break;
+            }
+        </script>
+        <script>
+            //компаніє приймає працівників від 32 до 45 років
+            var age = parseInt(prompt("Введіть вік"))
+            if (age>=32 && age<45) 
+                  document.write("Ви прийняті") 
+            else
+                document.write("Вибачте, але Ви нам не підходите") 
+           
+        </script>
+
+     <script>
+         //З клавіатури вводиться кількість балів. Вивести на екран оцінку
+         var score = parseInt(prompt("Введіть кількість балів від 1 до 5"))
+         var result
+         switch (score) {
+             case 1:
+                 result = "Незадовільно"
+                 break;
+                 case 2:
+                 result = "Незадовільно"
+                 break;
+                 case 3:
+                 result = "Задовільно"
+                 break;
+                 case 4:
+                 result = "Добре"
+                 break;
+                 case 5:
+                 result = "Відмінно"
+                 break;
+         
+             default:result = "Неправильно"
+                 break;
+         }
+         alert(result); 
+     </script>
+
+     <script>
+        //вводяться імена двох дітей та кількість шоколадок
+        //Вивести не екран ім’я того учня, у якого кількість шоколадок є більшою
+         var a = prompt("Введіть  перше імя ")
+         var b = prompt("Введіть  друге імя ")
+         var qnt= parseInt(prompt("Введіть загальну кількість шоколадок"))
+         var achoko = Math.floor(Math.random()*qnt)
+         var bchoko = Math.floor(Math.random()*qnt)
+         if(bchoko>achoko)
+            document.write("Шоколадок більше у" + b)
+            else{
+                if(bchoko<achoko)
+                    document.write("Шоколадок більше у" + a)
+                    else(achoko=bchoko)
+                        document.write("Шоколадок порівну")
+                }
+    </script>
+
+     <script>
+            //Комп’ютер випадковим чином вибирає початок і кінець проміжку (проміжок повинен знаходитися в межах від 1 до 100). Користувач вводить число і виграє, якщо число знаходиться у цьому проміжку, або розташоване від нього (від лівого або правого краю) не більше ніж на 10.
+            var a = Math.floor(1 + 99 * Math.random)
+            var b = parseInt(prompt("Введіть число"))
+            if (b>=a-10 && b<=a+10)
+             document.write("Выиграл")
+            else
+                document.write("Пробуйте еще")
+        </script>
+        
+        <script>
+            var a = Math.floor(1 + 9 * Math.random)
+            var b = parseInt(prompt("Введіть  перше число від 1 до 10", "1"))
+            var c = parseInt(prompt("Введіть  друге число від 1 до 10", "1"))
+            var min=(b-a)< (c-a)?b:c
+            document.write(min)
+    
+        </script>
+    
+</body>
+
+</html>
