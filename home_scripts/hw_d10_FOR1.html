@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.
+        for (let i = 0; i < 20; i++) {
+            document.write("o")
+            
+        }
+    </script>
+    <script>
+        //2.
+        let count_a = 1
+        for (let i = 0; i < 7; i++) {
+            for (let j = 0; j < count_a; j++)
+             {
+                document.write("o")
+                
+
+            }
+            count_a++
+            document.write("<br>")
+        }
+        
+    </script>
+
+    <script>
+        //2.1
+        let count_a = 1,
+            count_b = 6
+         for (let i = 0; i < 7; i++) {
+            for (let j = 0; j < count_b; j++)
+            {
+                document.write( ' &nbsp '  );
+            }
+                   count_b --
+        
+             for (let j = 0; j < count_a; j++) {
+                 document.write("o")
+     }
+            count_a ++
+       
+            
+            document.write("<br>")
+        }
+
+    </script>
+
+    <script>
+        //3
+        for (let t = 0; t < 3; t++) {
+               for (let p = 0; p < 7; p++) {
+                   document.write(' - ')
+               }
+               document.write(`<br>`)
+
+
+
+           for (let i = 0; i < 4; i++) {
+               document.write(` | &nbsp`  )
+
+           }
+
+           document.write(`<br>`)
+       }
+       for (let p = 0; p < 7; p++) {
+                   document.write(' - ')
+               }
+               document.write(`<br>`)
+    </script>
+    <script>
+        //3.1
+        let count_a = 12
+        for (let i = 0; i < 11; i++) {
+            for (let j = 0; j < count_a; j++)
+             {
+                document.write("o")
+                
+
+            }
+            count_a--
+            document.write("<br>")
+        }
+    </script>
+    <script>
+        let count_a = 1,
+            count_b = 12
+         for (let i = 0; i < 11; i++) {
+            for (let j = 0; j < count_a; j++) {
+                 document.write(` &nbsp `)
+     }
+            count_a ++
+            for (let j = 0; j < count_b; j++)
+            {
+                document.write( "o" );
+            }
+                   count_b --
+                         
+            
+            document.write("<br>")
+        }
+
+    </script>
+    <script>
+        //ялинка
+       
+                for (let i = 0; i < 3; i++) {
+                      
+                    let count_a = 1
+                    for (let j = 0; j < 5; j++) {
+                        
+                        for (let c = 0; c <count_a; c++) {
+                         document.write("o")
+                     }
+                    count_a ++
+            
+                    document.write("<br>")
+            }
+     
+                     
+    } 
+        
+
+
+    </script>
+    <script>
+        //20% по кредиту
+        let c = parseInt(prompt("input amount of money"))
+        let c1=0
+        for (let i = 0; i < 20; i++) {
+            c1 =Math.floor (c * 1.20)
+            document.write("Sum ="+ c1);
+            document.write(`<br>`)
+            c=c1
+        }
+        
+        
+    </script>
+    <script>
+        //20% по кредиту - 5% податку
+        let c = parseInt(prompt("input amount of money"))
+        let c1=0
+            for (let i = 0; i < 20; i++)
+            {
+            c1 =Math.floor ((c * 0.20)-(c*0.20)*0.05);
+        
+        document.write("Sum ="+ (c1+c));
+        document.write(`<br>`)
+        c=c1+c
+           }
+            
+            
+        
+    </script>
+    <script>
+        //7. на 20 років під 20% річних а потім на 17 років під 27% річних.
+        let c = parseInt(prompt("input amount of money"))
+        let c1=0
+        for (let i = 0; i < 20; i++) {
+            c1 =Math.floor (c * 1.20)
+            c=c1
+        }
+        document.write("Sum ="+ c);
+        document.write("<br>")
+        for (let i = 0; i < 17; i++) {
+            c1 =Math.floor (c * 1.27)
+            c=c1
+                        
+        }
+            document.write("Sum="+c)
+    </script>
+    <script>
+        //8.Вивести на екран послідовність символів, 82 символа
+        for (let i = 0; i <= 41; i++) {
+            document.write("a o ")
+            
+        }
+    </script>
+
+    <script>
+        //9.Вивести на екран 
+        var h= 1
+        var h1 = 1
+
+        for (let i = 0; i < 23; i++) {
+            document.write(h1+'')
+            h1++
+            for (let j = 1; j <= h; j++) {
+                document.write(j +'')
+            
+            }
+            h++
+        
+            document.write("<br>")
+        }
+        
+    </script>
+    <script>
+        //10. Вивести на екран 
+        var h=1
+        var h1 = 1
+        for (let i = 0; i < 6; i++) {
+            document.write(h1+'')
+            h1++
+            for (let j = 1; j <=h*h; j++) {
+                document.write(j +'')
+                
+            }
+            h++
+            document.write("<br>")
+            
+        }
+    </script>
+    <script>
+        //11.двоцифрові числа, у яких перша цифра є більшою або рівною за другу.
+        for (let i = 1; i <= 9; i++){
+            for (let j = 0; j <= 9; j++) {
+                if (i>=j)
+                document.write(i,j,'')
+                
+            }
+            
+            
+          
+        }
+    </script>
+    <script>
+        //11.1 трицифрові числа, у яких перша цифра є більшою або рівною за суму другої і третьої.
+        for (let i = 1; i < 9; i++) {
+            for (let j = 1; j <=9; j++) {
+                for (let k = 1; k <=9; k++) {
+                    if(i>= j+k)
+                        document.write(i,j,k,'')
+                    
+                    
+                }
+                
+                
+            }
+            
+        }
+    </script>
+    <script>
+        //12.кожного символу латинського алфавіту та поруч з кожним з них символу, що передує йому та що слідує за ним.
+        for (let i = `33`; i <=`47`; i++) {
+            let k = i+1
+            let j = i-1
+            document.write(String.fromCharCode( j,i,k ))
+            document.write("<br>")
+        }
+        
+    </script>
+    <script>
+        //13.таблицю розмірністю 4*3 (4 рядки, 3 стовпці)
+        document.write(`<table border = "2px">`)
+        let k = 1
+        for (let i = 0; i < 4; i++) {
+            document.write("<tr>")
+            for (let j = 0; j < 3; j++) {
+            
+                document.write(`<td>` +k+`</td>` )
+                k++
+               
+            }
+            
+            
+        }
+        document.write(`</table>`)
+    </script>
+    <script>
+        //13.список
+        document.write(`<ul type = "disc">`)
+        let j =1
+        for (let i = 0; i < 7; i++) {
+            
+            document.write(`<li>`+"Пункт"+j+`</li>`)
+            j++
+            document.write("<br>")
+            
+        }
+        document.write(`</ul>`)
+    </script>
+    <script>
+        //14 .список нумерований
+        document.write(`<ol>`)
+        let j =1
+        for (let i = 0; i < 7; i++) {
+            
+            document.write(`<li>`+"Пункт"+j+`</li>`)
+            j++
+            document.write("<br>")
+            
+        }
+        document.write(`</ol>`)
+    </script>
+    
+    
+
+
+
+</body>
+
+</html>

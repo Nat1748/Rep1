@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. З клавіатури вводитяться числа поки не буде введено 0. Знайти суму чисел.
+        let sum=0
+        do{
+        var number = parseInt(prompt("Введіть число"))
+        sum+=number
+        
+        } while (number>0) 
+        document.write(`${sum}`)    
+                
+    </script>
+    <script>
+        //2.З клавіатури вводитяться числа поки не буде введено 0. Знайти добуток чисел.
+        let product=1
+        do{
+        var number = parseInt(prompt("Введіть число"))
+            if (number>0) 
+             product*=number
+                       
+        } while (number>0) 
+        document.write(`${product}`)    
+                
+
+    </script>
+    <script>
+        //2.1 вивести символи в зворотньому порядку
+        var newstr = ''
+        do{
+            var letter = prompt("Введіть літеру")
+            newstr=letter+newstr
+            
+        } while(letter !="a")
+         
+        document.write(newstr)
+    </script>
+    <script>
+        //3. З клавіатури вводиться початкове знчення суми.
+        // Поки сума є меншою за 100 додавати до неї числа, які вводяться з клавіатури.
+        var sum= parseInt(prompt("Input sum,please"))
+        while (sum<100) {
+            let num = parseInt(prompt("Input num"))
+            sum+=num
+            
+        }
+        document.write(`${sum}`)
+    </script>
+    <script>
+        //4. З клавіатури поступово вводяться числа. Знайти суму перших N парних чисел.
+        var sum = 0
+        do {
+            let num1 = parseInt(prompt("Input num"))
+            let num2 = parseInt(prompt("Input num"))
+            if (num1 % 2==0  || num2 % 2==0) 
+                sum=num1+num2
+            
+                
+            
+        } while(sum == 0)
+        document.write(`${sum}`)
+    </script>
+    <script>
+        //4.1. З клавіатури вводяться два числа N i M (N<M). Вивести а екран числа
+        var N = parseInt(prompt("Введіть перше число"))
+        var M = parseInt(prompt("Введіть друге число"))
+        if (N>M) 
+            N=M
+        while (N<M) {
+          document.write(`${N}---${M}`)
+            N++
+        M--  
+        document.write("<br>")   
+        }  
+         
+        
+
+    </script>
+    <script>
+        //5
+        do {
+            var n = parseInt(prompt("Введіть число 1-4"))
+            switch (n) {
+                case 1:
+                    alert("Привіт")
+                    break;
+                    case 2:
+                    alert("До побачення")
+                    break;
+                    case 3:
+                    alert("Зачекай")
+                    break;
+                    case 4:
+                    alert("Вихід")
+                    break;
+
+                default:
+                    alert("Error")
+                    break;
+            }
+            document.write("<br>")
+            
+        } while (n!=4)
+    </script>
+        <script>
+        //8. З клавіатури вводиться число. Знаходити суму цифр до тих пір. Поки сума не стане більшую за 20.
+        var sum=0;
+        
+        while (sum<20) {
+            var number=parseInt(prompt("введіть число"))
+            sum+=number
+        }
+          document.write(`${sum}`)  
+        
+    </script>
+    <script>
+        //9. ввести пароль, 78
+        var pasw = 78
+        do{
+            var attempt = parseInt(prompt("Input password"))
+            
+            } while(pasw!=attempt)
+
+        document.write("Bingo")
+    </script>
+    <script>
+        //10.З клавіатури вводиться вартість одиниці товару. 
+        var price = Math.floor(Math.random()*100)
+        var sum = 0
+        do{
+            var money = parseInt(prompt("Input money"))
+            sum+=money
+            
+        } while (price>sum)            
+        document.write(`Сума товару становить ${price}`)
+    </script>
+    <script>
+        //11. Комп’ютер загадує випадкове число від 1 до 10
+        var num = Math.floor(1+ Math.random()*10)
+        var attemptcount = 0
+        do{
+            var attempt = parseInt(prompt("Ввести число від 1 до 10"))
+            attemptcount++
+
+        } while(attempt>num || attempt<num)
+        document.write(`Ви вгадали число ${num} з ${attemptcount} спроби`)
+    </script>
+    <script>
+        //11.1. Комп’ютер загадує два випадкових числа від 1 до 10.
+        var num1 = Math.floor(1+ Math.random()*10)
+        var num2 = Math.floor(1+ Math.random()*10)
+
+        var attemptcount = 0
+        do{
+            var attempt = parseInt(prompt("Ввести число від 1 до 10"))
+            attemptcount++
+
+        } while(attempt>num1 && attempt>num2 || attempt<num1 && attempt<num2)
+        document.write(`Ви вгадали число ${num1} та ${num2} з ${attemptcount} спроби`)
+    </script>
+    <script>
+        //З клавіатури вводяться поступово числа. Знайти два найбільші числа.
+        // Ввід здійснюється до тих пір, поки різниця між такими числами є більшою за 5.
+        
+        let max1=0
+        let max2=0
+
+        do{
+            var a = parseInt(prompt("Ввести число"))
+                
+                if(a>=max1)
+                    max1=a
+                    else
+                        max2=a 
+           
+            
+            
+        } while((max1-max2) >5)
+        document.write(`Найбільші числа ${max1} та  ${max2}`)
+    </script>
+    <script>
+        //13. З клавіатури вводяться поступово числа. Знайти два найменші числа
+        let min1 = parseInt(prompt("Ввести число"))
+        let min2 = 0
+
+        do{
+            let a = parseInt(prompt("Ввести число"))
+              
+                if(a<=min1)
+                    min1=a
+                    else
+                        min2=a 
+           
+            
+            
+        } while((min2-min1) >5)
+        document.write(`Найменші числа ${min1} та  ${min2}`)
+    </script>
+    <script>
+        //15.морской бой. 
+        
+        var ShipPosition = Math.floor(1+Math.random()*25)
+               
+        do{
+            var Shot= parseInt(prompt("Input shot"))
+           
+                 
+                if(Shot > ShipPosition) 
+                    alert("Мазила") 
+                  else
+                    if(Shot<ShipPosition)
+                    alert("Мимо")
+                        else
+                            alert("Бубочка") 
+            document.write(`<table border ="2px">`)
+            let k = 1        
+            for (let i = 0; i < 5; i++) {
+                document.write("<tr></tr>")
+                for (let j = 0; j < 5; j++) {
+                   
+                    if (k==Shot) 
+                        document.write("<td> * </td>")
+                        else 
+                            if(k==ShipPosition)
+                            document.write("<td> S </td>")
+                                else
+                            document.write("<td> _ </td>")
+                  k++  
+                }
+                
+            }
+            document.write(`</table>`)
+
+       } while (Shot!=ShipPosition)
+        
+
+        
+        
+    </script>
+    <script>
+        //16.
+        var rabbit = Math.floor(1+Math.random()*10)
+        var attempt = parseInt(prompt("Введіть кількість патронів"))
+        do{
+            var Shot= parseInt(prompt("Input shot"))
+                             
+           if(Shot!=rabbit) {
+               
+               attempt--
+               alert(`У вас залишилось ${attempt} пострілів`)
+ 
+               rabbit=Math.floor(1+(Math.random()*6))
+           } 
+                else
+                   alert("Бубочка") 
+
+         document.write(`<table border ="2px">`)
+                document.write("<tr>") 
+            let k = 1        
+            for (let i = 1; i <= 10; i++) {
+                                
+                    if (k==Shot) 
+                        document.write("<td>*</td>")
+                        else 
+                            if(k==rabbit)
+                            document.write("<td>r</td>")
+                                else
+                            document.write("<td> _<td>")
+                  k++  
+                
+                
+            }
+            document.write("</tr>")
+            document.write(`</table>`)               
+
+        }while(Shot!=rabbit && attempt>0)
+        
+        
+    </script>
+    <script>
+        //17.танчики
+        var tank = Math.floor(1+Math.random()*10)
+        var attempt = parseInt(prompt("Введіть кількість патронів"))
+        var score = 100
+        do{
+            var Shot= parseInt(prompt("Input shot"))
+                             
+           if(Shot!=tank) {
+               
+               attempt--
+               alert(`У вас залишилось ${attempt} пострілів`)
+               tank = Math.floor(1+Math.random()*10)
+           } 
+                else{
+                   alert("Бубочка") 
+                   score -=30
+                }
+         document.write(`<table border ="2px">`)
+                document.write("<tr>") 
+            let k = 1        
+            for (let i = 1; i <= 10; i++) {
+                                
+                    if (k==Shot) 
+                        document.write("<td>*</td>")
+                        else 
+                            if(k==tank)
+                            document.write("<td>t</td>")
+                                else
+                            document.write("<td> _<td>")
+                  k++  
+                
+                
+            }
+            document.write("</tr>")
+            document.write(`</table>`)               
+
+        }while(score!=0 && attempt>0)
+        
+
+    </script>
+    
+</body>
+</html>
