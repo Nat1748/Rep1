@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        ///<summary>
+        ///Функція,яка яка за номером місяця повертає пору року, до якої відноситься цей місяць.
+        ///</summary>
+        ///<param name = "month">Критерій - номер місяця</param>
+        function setTimeofYear(month) {
+            switch (month) {
+                case 1:
+                case 2:
+                case 12:
+                    return("Зима")
+                case 3:
+                case 4:
+                case 5: 
+                    return ("Весна")
+                case 6:
+                case 7:
+                case 8:
+                    return("Літо")
+                case 9:
+                case 10:
+                case 11:
+                    return("Осінь")
+                    
+            
+                default:
+                    return("Помилка вводу")
+            }
+            
+            
+        }
+//=============================
+//Використовуємо функцію
+        var month = parseInt(prompt("Введіть номер місяця "))
+            document.write(`Вказаний місяць відноситься до пори року ${setTimeofYear(month)}`)
+    </script>
+    <script>
+                
+        ///<summary>
+        ///Функція,яка яка за номером місяця повертає його назву.
+        ///</summary>
+        ///<param name = "month">Критерій - номер місяця</param>
+        function NameofMonth(month) {
+            switch (month) {
+                case 1: return("Січень")
+                case 2: return("Лютий")
+                case 12:
+                    return("Грудень")
+                case 3: return("Березень")
+                case 4:return("Квітень")
+                case 5: 
+                    return ("Травень")
+                case 6:return("Червень")
+                case 7:return("Липень")
+                case 8:
+                    return("Серпень")
+                case 9:return("Вересень")
+                case 10:return("Жовтень")
+                case 11:
+                    return("Листопад")
+                    
+            
+                default:
+                    return("Помилка вводу")
+            }
+            
+            
+        }
+//=============================
+//Використовуємо функцію
+        var month = parseInt(prompt("Введіть номер місяця "))
+            document.write(`Вказаний місяць це ${NameofMonth(month)}`)
+    
+    </script>
+    <script>
+        ///<summary>
+        ///Функція,для знаходження суми 4 чисел .
+        ///</summary>
+        ///<param name = "num1">Введенні 4 числа,суму яких потрібно знайти</param>
+        function getSum(num1,num2,num3,num4) {
+            return(num1+num2+num3+num4)
+            
+        }
+        ///<summary>
+        ///Функція,для знаходження добутку 4 числе .
+        ///</summary>
+        ///<param name = "num1">Введенні 4 числа, добуток яких потібно знайти</param>
+        function getProduct(num1,num2,num3,num4) {
+            return(num1*num2*num3*num4)
+        }
+        ///<summary>
+        ///Функція,для знаходження середнього арифметичного  значення 4 чисел .
+        ///</summary>
+        ///<param name = "num">Введенні 4 числа, середнэ арифметичне яких необхідно знайти</param>
+        function getAverageScore(num1,num2,num3,num4) {
+            return(num1+num2+num3+num4)/4
+        }
+        ///<summary>
+        ///Функція,для знаходження мінімального значення .
+        /// використовуємо Math.min
+        ///</summary>
+        ///<param name = "num1">Введенні 4 числа, серед яких потрідно знайти мінімальне</param>
+        function getMinimumValue(num1,num2,num3,num4) {
+            return(Math.min(num1,num2,num3,num4))
+            
+        }
+        /// Використання функції
+
+        let num1= parseInt(prompt("Input number 1"))
+        let num2= parseInt(prompt("Input number 2"))
+        let num3= parseInt(prompt("Input number 3"))
+        let num4= parseInt(prompt("Input number 4"))
+        let sum = getSum(num1,num2,num3,num4)
+        let product = getProduct(num1,num2,num3,num4)
+        let average = getAverageScore(num1,num2,num3,num4)
+        let min = getMinimumValue(num1,num2,num3,num4)
+        document.write(`Сума чисел дорівнює ${sum}<br>`)
+        document.write(`Добуток чисел дорівнює ${product}<br>`)
+        document.write(`Середнє арифметичне чисел дорівнює ${average}<br>`)
+        document.write(`Мінімальне з чисео дорівнює ${min}<br>`)
+
+    </script>
+    <script>
+        ///<summary>
+        ///Функція,для знаходження парного числа для заданих .
+        /// множимо на 2
+        ///</summary>
+        ///<param name = "num">Число , якому потрібно знати парне число</param>
+        function findEvenScore(num) {
+            return(num*2)
+            
+        }
+        /// виконання функції
+        let num1 = parseInt(prompt("Input num"))
+        let num2 = parseInt(prompt("Input num"))
+        let num3 = parseInt(prompt("Input num"))
+        let EvenScore1=findEvenScore(num1)
+        let EvenScore2=findEvenScore(num2)
+        let EvenScore3 = findEvenScore(num3)
+        document.write(`${EvenScore1}, ${EvenScore2},${EvenScore3}`)
+    </script-->
+    <!--script>
+        ///<summary>
+        ///Функція для конвертації см в дюйми .
+        ///</summary>
+        ///<param name = "см">Ввести см</param>
+        function convertCmtoInches(cm) {
+            return(cm*0.3937)
+            
+        }
+        ///<summary>
+        ///Функція для конвертації кілограмів в фунти .
+        ///</summary>
+        ///<param name = "кг">Ввести кг</param>
+        function convertKg_Lbs(kg) {
+            return(kg*2.2046)
+            
+        }
+        ///<summary>
+        ///Функція для конвертації км в милі .
+        ///</summary>
+        ///<param name = "км">Ввести км</param>
+        function convertKm_Miles(km) {
+            return(km*0.6214)
+            
+        }
+        ///використання функцій
+        let cm = parseInt(prompt("Input cm"))
+        let inches = convertCmtoInches(cm)
+        document.write(`${cm} дорівнює ${inches.toFixed(2)}<br>`)
+
+        let kg = parseInt(prompt("Input kg"))
+        let lbs = convertKg_Lbs(kg)
+        document.write(`${kg} дорівнює ${lbs.toFixed(2)}<br>`)
+
+        let km = parseInt(prompt("Input km"))
+        let miles = convertKm_Miles(km)
+        document.write(`${km} дорівнює ${miles.toFixed(2)}<br>`)
+    </script>
+    <script>
+        ///<summary>
+        ///Функція для знаходження довжини сторони трикутника по координатам вершин трикутника .
+        /// згідно формули: довжина = корінь квадратний з суми квадратів координат вектора
+        ///</summary>
+        ///<param name = "х,у,х1,у1">Координати вершин трикутника однієї сторони(2 вершини)</param>
+        
+        function getSideofTriangle(x,y,x1,y1) {
+            return Math.pow((Math.pow((x-x1),2)+Math.pow((y-y1),2)),(0.5))
+          
+        }
+
+        var x = parseInt(prompt("Ввести координату х для вершини А"))
+        var y = parseInt(prompt("Ввести координату у для вершини А"))
+        var x1 = parseInt(prompt("Ввести координату х для вершини B"))
+        var y1 = parseInt(prompt("Ввести координату х для вершини B"))
+        var x2 = parseInt(prompt("Ввести координату х для вершини C"))
+        var y2 = parseInt(prompt("Ввести координату х для вершини C"))
+        var t = getSideofTriangle(x,y,x1,y1)
+        var z =getSideofTriangle(x1,y1,x2,y2)
+        var i= getSideofTriangle(x,y,x2,y2)
+              var p = t+z+i
+        var s= Math.pow(p*(p-t)*(p-z)*(p-i),(0.5))
+            
+        document.write(`Периметер трикутника дорівнює ${p.toFixed(2)}<br>`)
+        document.write(`Площа трикутника дорівнює ${s.toFixed(2)}<br>`)
+
+    </script>
+    <script>
+        //2)	Задані координати 3 точок. Визначити чи лежать вони на одній прямій, за допомогою підпрограми.
+
+        function getOneofCoordinate(x,x1,x2) {
+            return(x-x1)/(x2-x1)
+                      
+        }
+        var x = parseFloat(prompt("Ввести координату х для вершини А"))
+        var y = parseFloat(prompt("Ввести координату у для вершини А"))
+        var x1 = parseFloat(prompt("Ввести координату х для вершини B"))
+        var y1 = parseFloat(prompt("Ввести координату х для вершини B"))
+        var x2 = parseFloat(prompt("Ввести координату х для вершини C"))
+        var y2 = parseFloat(prompt("Ввести координату х для вершини C"))
+        var t = getOneofCoordinate(x,x1,x2)
+        var l = getOneofCoordinate(y,y1,y2)
+        if(t==l)
+            document.write(`Всі точки на одній прямій`)
+            else
+            document.write(`Вказані точки не знаходяться на одній прямій`)
+
+
+    </script>
+    <script>
+
+        function getSideofTriangle(x,y,x1,y1) {
+            return Math.pow((Math.pow((x-x1),2)+Math.pow((y-y1),2)),(0.5))
+        }
+
+        function getCosofAngle(b,c) {
+            return  b/c
+        }
+        var x = parseFloat(prompt("Ввести координату х для вершини А"))
+        var y = parseFloat(prompt("Ввести координату у для вершини А"))
+        var x1 = parseFloat(prompt("Ввести координату х для вершини B"))
+        var y1 = parseFloat(prompt("Ввести координату y для вершини B"))
+        var x2 = parseFloat(prompt("Ввести координату х для вершини C"))
+        var y2 = parseFloat(prompt("Ввести координату y для вершини C"))
+        var a = getSideofTriangle(x,y,x1,y1)
+        var b = getSideofTriangle(x1,y1,x2,y2)
+        var c = getSideofTriangle(x,y,x2,y2)
+        var cosc = getCosofAngle(a,b)
+        var cosa = getCosofAngle(b,c)
+        var cosb = getCosofAngle(c,a)
+        if(cosc==0)
+                document.write(`трикутник прямокутний з гіпотенузою ${b} `)
+                else 
+                    if(cosa==0)
+                    document.write(`трикутник прямокутний з гіпотенузою ${c} `)
+                        else
+                            if(cosb==0)
+                            document.write(`трикутник прямокутний з гіпотенузою ${a} `)
+                            else
+                                document.write(`трикутник не прямокутний`)
+            
+    </script>
+    <script>
+        //4)	Задані координати вершин чотирикутника в порядку обходу за годинниковою стрілкою. 
+        //Визначити чи він є прямокутником, за допомогою підпрограми. Якщо так  знайти його площу.
+        function InputVariables() {
+            return parseFloat(prompt(`Ввести координату  для вершини `))
+            
+        }
+        function getLengthofParalelogram(x,y,x1,y1) {
+            return Math.pow((Math.pow((x-x1),2)+Math.pow((y-y1),2)),(0.5))
+        }
+        var x = InputVariables()
+        var y = InputVariables()
+        var x1 = InputVariables()
+        var y1 = InputVariables()
+        var x2 = InputVariables()
+        var y2 = InputVariables()
+        var x3 = InputVariables()
+        var y3 = InputVariables()
+        var a = getLengthofParalelogram(x,y,x1,y1)
+        var b = getLengthofParalelogram(x1,y1,x2,y2)
+        var c = getLengthofParalelogram(x2,y2,x3,y3)
+        if (a==c) 
+            document.write(`Заданий чотирикутник є прямокутником з площею ${a*b}`)
+            else
+                document.write(`Цей чотирикутник не є прямокутником`)
+            
+        
+
+    </script>
+    <script>
+        //Знайти координати точки перетину його діагоналей, за допомогою підпрограми.
+
+        function InputVariables() {
+            return parseFloat(prompt(`Ввести координату  для вершини `))
+            
+        }
+        function getLengthofParalelogram(x,y,x1,y1) {
+            return Math.pow((Math.pow((x-x1),2)+Math.pow((y-y1),2)),(0.5))
+        }
+        function getDiagonalofParallelogram(a,b) {
+            return Math.pow((Math.pow(a,2)+ Math.pow(b,2)), (0.5))
+            
+        }
+        var x = InputVariables()
+        var y = InputVariables()
+        var x1 = InputVariables()
+        var y1 = InputVariables()
+        var x2 = InputVariables()
+        var y2 = InputVariables()
+        
+        var a = getLengthofParalelogram(x,y,x1,y1)
+        var b = getLengthofParalelogram(x1,y1,x2,y2)
+        
+        document.write(`діагональ чотирикутника становить ${getDiagonalofParallelogram(a,b).toFixed(2)}`)
+
+    </script>
+    <script>
+        //6)	Задані координати 3 точок. Визначити площу трикутника, за допомогою підпрограми
+
+        function InputVariables() {
+            return parseFloat(prompt(`Ввести координату  для вершини `))
+            
+        }
+
+        function getSideofTriangle(x,y,x1,y1) {
+            return Math.pow((Math.pow((x-x1),2)+Math.pow((y-y1),2)),(0.5))
+          
+        }
+        function getAreaofTriangle(t,z,i) {
+            var p = t+z+i
+        return Math.pow(p*(p-t)*(p-z)*(p-i),(0.5))
+            
+        }
+        var x = InputVariables()
+        var y = InputVariables()
+        var x1 = InputVariables()
+        var y1 = InputVariables()
+        var x2 = InputVariables()
+        var y2 = InputVariables() 
+        var t = getSideofTriangle(x,y,x1,y1)
+        var z =getSideofTriangle(x1,y1,x2,y2)
+        var i= getSideofTriangle(x,y,x2,y2)
+ 
+        document.write(`Площа трикутника дорівнює ${getAreaofTriangle(t,z,i).toFixed(2)}`)
+
+    </script>
+    <script>
+        //7)	Задані координати 3 точок. Визначити радіус описаного кола, за допомогою підпрограми.
+        function InputVariables() {
+            return parseFloat(prompt(`Ввести координату  для вершини `))
+            
+        }
+
+        function getSideofTriangle(x,y,x1,y1) {
+            return Math.sqrt(Math.pow((x-x1),2)+Math.pow((y-y1),2))
+          
+        }
+        function getRadiusofTheCircle(t,z,i) {
+            var p = (t+z+i)/2
+           return (t*z*i)/(4*Math.sqrt(p*(p-t)*(p-z)*(p-i)))
+        }
+        var x = InputVariables()
+        var y = InputVariables()
+        var x1 = InputVariables()
+        var y1 = InputVariables()
+        var x2 = InputVariables()
+        var y2 = InputVariables() 
+        var t = getSideofTriangle(x,y,x1,y1)
+        var z =getSideofTriangle(x1,y1,x2,y2)
+        var i= getSideofTriangle(x,y,x2,y2)
+        var r=getRadiusofTheCircle(t,z,i)
+        document.write(`Радіус описаного кола дорівнює ${r.toFixed(2)}`)
+
+    </script>
+    <script>
+        //8)	Задані координати точки на поверхні і центра кулі. Знайти її об’єм і площу поверхні, за допомогою підпрограм
+        function InputVariables() {
+            return parseFloat(prompt(`Ввести координату `))
+            
+        }
+        function getRadiusofCircle(x,y,x1,y1) {
+            return Math.sqrt(Math.pow((x-x1),2)+Math.pow((y-y1),2))
+          
+        }
+        function getAreaofCircle(r) {
+            return Math.PI*Math.pow(r,2)
+            
+        }
+        function calculateVolumeofCircle(r) {
+            return (4/3)*(Math.PI*Math.pow(r,3))
+        }
+        var x = InputVariables()
+        var y = InputVariables()
+        var x1 = InputVariables()
+        var y1 = InputVariables()
+        var radius = getRadiusofCircle(x,y,x1,y1)
+        var S= getAreaofCircle(radius)
+        var V=calculateVolumeofCircle(radius)
+        document.write(`Обєм кола дорівнює ${V.toFixed(2)} , площа кола дорівнює ${S.toFixed(2)}`)
+
+    </script>
+    <script>
+        //9)	Створити підпрограми для знаходження n-го члена та суми перших n членів арифметичної 
+        //прогресії, за відомими першим членом та різницею
+        function getMemberArithmeticProgression(a,d,n) {
+            return a+(n-1)*d
+            
+        }
+        function getSumofArithmeticProgression(a,d,n) {
+            return ((2*a+(n-1)*d)/2)*n
+        }
+        var a = parseFloat(prompt("Вкажіть перший член арифметичної прогресії"))
+        var d = parseFloat(prompt("Вкажіть різницю арифметичної прогресії"))
+        var n = parseInt(prompt("Вкажіть номер n-го члена"))
+        document.write(`Заданий член прогресії становить ${getMemberArithmeticProgression(a,d,n)}`)
+        document.write(`сума перших членів складає${getSumofArithmeticProgression(a,d,n)}`)
+    </script>
+    <script>
+        //10)	Створити підпрограми для знаходження n-го члена 
+        //та суми суми перших n членів геометричної прогресії, за відомими першим членом та знаменником
+        function getMemberGeomethricProgression(a,q,n) {
+            return a*Math.pow(q,(n-1))
+        }
+        function getSumGeomethricProgression(a,q,n) {
+            return a*((1-Math.pow(q,n))/(1-q))
+        }
+        var a = parseFloat(prompt("Вкажіть перший член геометричної прогресії"))
+        var q = parseFloat(prompt("Вкажіть знаменик геометричної прогресії"))
+        var n = parseInt(prompt("Вкажіть номер n-го члена"))
+        document.write(`Заданий член прогресії становить ${getMemberGeomethricProgression(a,q,n)}`)
+        document.write(`сума перших членів складає${getSumGeomethricProgression(a,q,n)}`)
+    </script>
+    <script>
+        //11)	Створити підпрограму для знаходження суми 
+        //нескінченної спадної геометричної прогресії, за відомими першим членом та знаменником
+
+        function ProgressionCheck(a,q) {
+            if(a>0 && q<1 && q>0)
+                return true
+                else
+                    return false
+        }
+
+        function getSumGeomethricProgression(a,q) {
+            return a/(1-q)
+        }
+        var a = parseFloat(prompt("Вкажіть перший член геометричної прогресії"))
+        var q = parseFloat(prompt("Вкажіть знаменик геометричної прогресії"))
+        let prog = ProgressionCheck(a,q)
+        if(prog==true)
+            document.write(`Дана прогресія є нескінчено спадною та її сума складає${getSumGeomethricProgression(a,q)}`)
+            else
+                document.write(`Вказана прогресія не є нескінчено спадною`)
+        
+        
+    </script>
+    <script>
+        //12)	Розв’язати квадратне рівняння, задане коефіцієнтами, за допомогою підпрограми. 
+        // Знаходження дискримінанта оформити як окрему підпрограму.
+        function getDiscriminant(a,b,c) {
+            var D = Math.pow(b,2) - 4*a*c
+            return D
+            
+        }
+        function solveQuadraticEquation1(a,b,d) {
+            var x = (-b + Math.sqrt(d))/(2*a)
+            return x 
+        }
+        function solveQuadraticEquation2(a,b,d) {
+            var x = (-b - Math.sqrt(d))/(2*a)
+            return x 
+        }
+        var a = parseFloat(prompt("Вкажіть a"))
+        var b = parseFloat(prompt("Вкажіть b"))
+        var c = parseFloat(prompt("Вкажіть c"))
+        var D = getDiscriminant(a,b,c)
+        if(D>0){
+            var x = solveQuadraticEquation1(a,b,D)
+            var y = solveQuadraticEquation2(a,b,D)
+            document.write(`Рівняння має два корені ${x}, ${y}`)
+        }
+            else
+                if (D==0) {
+                    var x = solveQuadraticEquation1(a,b,D)
+                    document.write(`Рівняння має  один корень ${x}`)
+                    }
+                    else
+                    document.write(`Рівняння не має  дійсних коренів `)
+            
+
+    </script>
+    <script>
+        //13)	 Відома відсоткова ставка по депозиту. Скласти підпрограму для визначення суми, що отримає користувач через n років,
+        // в залежності від суми вкладу. 
+        //Відсотки нараховуються щомісяця на всю суму на рахунку, в тому числі і на раніше нараховані відсотки.
+        function getYearsDeposit(d,p,n) {
+             return d*Math.pow((1+(p*30)/(100*365)),n)
+            
+        }
+
+        var deposit = parseFloat(prompt("Вкажіть початковий вклад"))
+        var percent = parseFloat(prompt("Вкажіть відсоткову ставку"))
+        var n = parseInt(prompt("Вкажіть термін депозиту в кількості місяців"))
+        var s = getYearsDeposit(deposit,percent,n)
+        document.write(`Користувач отримає вклад в розмірі ${s.toFixed(2)}`)
+
+    </script>
+</body>
+
+</html>
