@@ -14,7 +14,7 @@
         var number = parseInt(prompt("Введіть число"))
         sum+=number
         
-        } while (number>0) 
+        } while (number>0)   // Тут треба умову   } while (number!=0)
         document.write(`${sum}`)    
                 
     </script>
@@ -26,7 +26,7 @@
             if (number>0) 
              product*=number
                        
-        } while (number>0) 
+        } while (number>0)    Аналогічно
         document.write(`${product}`)    
                 
 
@@ -45,7 +45,7 @@
     <script>
         //3. З клавіатури вводиться початкове знчення суми.
         // Поки сума є меншою за 100 додавати до неї числа, які вводяться з клавіатури.
-        var sum= parseInt(prompt("Input sum,please"))
+        var sum= parseInt(prompt("Input sum,please"))  //Щоб не дублювати введення сумі можна було присвоїти 0
         while (sum<100) {
             let num = parseInt(prompt("Input num"))
             sum+=num
@@ -149,7 +149,7 @@
             var attempt = parseInt(prompt("Ввести число від 1 до 10"))
             attemptcount++
 
-        } while(attempt>num || attempt<num)
+        } while(attempt>num || attempt<num)   // } while(attempt != num )
         document.write(`Ви вгадали число ${num} з ${attemptcount} спроби`)
     </script>
     <script>
@@ -162,7 +162,7 @@
             var attempt = parseInt(prompt("Ввести число від 1 до 10"))
             attemptcount++
 
-        } while(attempt>num1 && attempt>num2 || attempt<num1 && attempt<num2)
+        } while(attempt>num1 && attempt>num2 || attempt<num1 && attempt<num2) //Аналогічно
         document.write(`Ви вгадали число ${num1} та ${num2} з ${attemptcount} спроби`)
     </script>
     <script>
@@ -173,7 +173,7 @@
         let max2=0
 
         do{
-            var a = parseInt(prompt("Ввести число"))
+            var a = parseInt(prompt("Ввести число"))    Доробити
                 
                 if(a>=max1)
                     max1=a
@@ -191,7 +191,7 @@
         let min2 = 0
 
         do{
-            let a = parseInt(prompt("Ввести число"))
+            let a = parseInt(prompt("Ввести число"))  Доробити
               
                 if(a<=min1)
                     min1=a
@@ -247,7 +247,7 @@
     <script>
         //16.
         var rabbit = Math.floor(1+Math.random()*10)
-        var attempt = parseInt(prompt("Введіть кількість патронів"))
+        var attempt = parseInt(prompt("Введіть кількість патронів"))  Спробуте спростити
         do{
             var Shot= parseInt(prompt("Input shot"))
                              
