@@ -10,7 +10,7 @@
     <!--script>
         // Задача. Кожне парне число збільшити на 5. 
         var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
-        arr.forEach((x,i,arr)=>x%2==0? arr[i]+=5:arr[i])
+        arr.forEach((x,i,arr)=>{if(x%2==0) arr[i]+=5}) Тут краще використовувати if
         document.write(arr)
     </script-->
     <!--script>
@@ -23,7 +23,7 @@
         //Задача. Дано масив показників термометра протягом місяця. 
         //З’ясувати, чи є серед них дні, коли температура була меншою за 5 градусів.
         var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
-        document.write(`${arr.some(el=>el<5)}`)
+        document.write(`${arr.some(el=>el<5)}`)  Краще вивоводити якесь повідомлення
     </script-->
     <!--script>
         //Задача. Дано масив показників термометра протягом місяця.
@@ -55,7 +55,7 @@
     
     var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
     var el = parseInt(prompt("Вкажіть єлемент"))
-    arr.forEach((x,i,arr)=> x>el? arr[i]*2:arr[i]*3)
+    arr.forEach((x,i,arr)=> x>el? arr[i]*=2:arr[i]*=3)
 
     </script-->
     <!--script>
@@ -66,14 +66,14 @@
     //Використати функції.
 
     var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
-    var newarr=arr.map((x,i,arr)=>Math.round((Math.pow(x,2)*7)/10))
+    var newarr=arr.map((x,i,arr)=>Math.round((Math.pow(x,2)*7)/10)) Це мали бути 3 окремі задачі
     document.write(newarr)
 
     </script-->
     <!--script>
         //Задача 1. Дано масив цілих чисел. Кожне від’ємне число замінити на 0.
         var arr = [1,2,3,-4,5,-6,-7,8,9,0,-12,-16]
-        arr.forEach((x,i,arr)=>x<0?arr[i]=0:arr[i])
+        arr.forEach((x,i,arr)=>x<0?arr[i]=0:null) краще було використати if
         document.write(arr)
 
     </script-->
@@ -120,7 +120,7 @@
     </script-->
     <!--script>
         //Задача 7. Розробити функцію, яка би для довільної кількості переданих символів визначала, кількість букв «а».
-        var arr = ['aaaa','hgjffdj','a','bnnaf','hjka']
+        var arr = ['a','h','a','b','h']
         var newarr= arr.filter((x,i)=>x[i]=='a')
         document.write(`${newarr.length}`)
     </script-->
