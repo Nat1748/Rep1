@@ -118,12 +118,12 @@
         const shop = 2
         var money = inputArr(shop,WeekDay)
         
-        function getWeekProfitforShop1(arr) {
+        function getWeekProfitforShop1(arr, shopNum) {
             var sum=0
             
-            for (let i = 0; i < arr.length/2; i++) {
+           
                 for (let j = 0; j < arr[i].length; j++) {
-                    sum+=arr[i][j]
+                    sum+=arr[shopNum][j]
                     
                     
                 }
@@ -131,19 +131,7 @@
             }
             return sum
         }
-        function getWeekProfitforShop2(arr) {
-            var sum=0
-            
-            for (let i = arr.length/2; i < arr.length; i++) {
-                for (let j = 0; j < arr[i].length; j++) {
-                    sum+=arr[i][j]
-                    
-                    
-                }
-                
-            }
-            return sum
-        }
+       
 
     
         var WeekProfit1 = getWeekProfitforShop1(money)
