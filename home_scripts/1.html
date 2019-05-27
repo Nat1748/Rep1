@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--script>
+        // Задача. Кожне парне число збільшити на 5. 
+        var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
+        arr.forEach((x,i,arr)=>x%2==0? arr[i]+=5:arr[i])
+        document.write(arr)
+    </script-->
+    <!--script>
+        //Задача. Дано масив чисел. Сформувати новий масив, у якому усі числа збільшено на 20.
+        var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
+        var newarr=arr.map((x,i,arr)=>arr[i]+20)
+        document.write(newarr)
+    </script-->
+    <!--script>
+        //Задача. Дано масив показників термометра протягом місяця. 
+        //З’ясувати, чи є серед них дні, коли температура була меншою за 5 градусів.
+        var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
+        document.write(`${arr.some(el=>el<5)}`)
+    </script-->
+    <!--script>
+        //Задача. Дано масив показників термометра протягом місяця.
+        // З’ясувати, чи усі показники є більшими за 10 градусів.
+        var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
+        document.write(`${arr.every(el=>el<10)}`)
+
+    </script-->
+    <!--script>
+        //Задача. Знайти суму від’ємних елементів масиву.
+        var arr = [1,2,3,4,-5,6,-7,8,9,0,12,-16]
+        var product= arr.reduce((result,x) => x<0? result+x : result   , 0)
+        alert(product)
+    </script-->
+    <!--script>
+        //Задача. Створити функцію, яка б могла знаходити суму та добуток для довільної кількості переданих чисел
+        var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
+        var product= arr.reduce((result,x) =>result+x, 0)
+        var product1= arr.reduce((result,x) =>result*x, 1)
+        alert(`${product}=====${product1}`)
+    </script-->
+    <!--script>
+        //Задача. Дано масив цілих чисел. Вибрати одну із дій при перегляді елементів. 
+    //Якщо елемент більше за заданий то:
+    //1)помножити на 2;
+    //2)поділити на 7;
+    //Якщо елемент менше рівне за заданий то:
+    //1)помножити на 3;
+    
+    var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
+    var el = parseInt(prompt("Вкажіть єлемент"))
+    arr.forEach((x,i,arr)=> x>el? arr[i]*2:arr[i]*3)
+
+    </script-->
+    <!--script>
+        //Задача 1. Дано одновимірний масив. Кожен елемент
+    //1)піднести до квадрату;
+    //2)помножити на 7;
+    //3)поділити на 10.
+    //Використати функції.
+
+    var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
+    var newarr=arr.map((x,i,arr)=>Math.round((Math.pow(x,2)*7)/10))
+    document.write(newarr)
+
+    </script-->
+    <!--script>
+        //Задача 1. Дано масив цілих чисел. Кожне від’ємне число замінити на 0.
+        var arr = [1,2,3,-4,5,-6,-7,8,9,0,-12,-16]
+        arr.forEach((x,i,arr)=>x<0?arr[i]=0:arr[i])
+        document.write(arr)
+
+    </script-->
+    <!--script>
+        //Задача 2. Дано масив цін. Сформувати новий масив, який містить тільки ті ціни, які менші за задану.
+        var arr = [1,2,3,4,5,6,7,8,9,0,12,16]
+        var value = parseInt(prompt("Введіть ціну"))
+        var NewValue = arr.filter(x=>x<value)
+        document.write(NewValue)
+    </script-->
+    <!--script>
+        //Задача 3. Дано масив цін товарів. 
+        //Для цін, які менші за 1000грн. додати 20% ціни, для тих, які більші за 1000 грн. відняти 30%.
+        var arr = [176,990,1067,880,1150,1980,1760]
+        arr.forEach ((x,i,arr)=>x>1000?arr[i]*=0.7:arr[i]*=1.2)
+        document.write(arr)
+    </script-->
+    <!--script>
+        //Задача 4. Дано масив імен. Сформувати новий масив, 
+        //який складається з імен, які починаються на задану літеру.
+         var arr =["Ivan","Andrew","Ben","Steve","Hanna","Mery","Astel"]
+         var letter = prompt("Input letter")
+         var NewArr = arr.filter(x=>x[0]==letter)
+         document.write(NewArr)
+
+    </script-->
+    <!--script>
+        //Задача 5. Дано ваги автомобілів на парковці. 
+        //З’ясувати, чи усі автомобілі є легковими (легшими за 2000 кг).
+        var arr = [1500,1900,2300,4500,3000,1800,1600]
+        if(arr.every((x)=>x<2000))
+            document.write("Всі автомобілі є легковими")
+            else 
+            document.write("Серед автомобілів є і вантажні")
+    </script-->
+    <!--script>
+        //Задача 6. Дано масив, який зберігає кількість відвідувачів протягом тижня. 
+        //З’ясувати, чи були дні, коли кількість відвідувачів була меншою за 10.
+        var arr = [1,2,3,4,5,12,7]
+        if (${arr.some(el=>el<10)})
+            document.write(`Таки да, були дні коли відвідувачів було менше 10`)
+            else
+                document.write(`Ми круті - в нас завжди багато відвідувачів`)
+    </script-->
+    <!--script>
+        //Задача 7. Розробити функцію, яка би для довільної кількості переданих символів визначала, кількість букв «а».
+        var arr = ['aaaa','hgjffdj','a','bnnaf','hjka']
+        var newarr= arr.filter((x,i)=>x[i]=='a')
+        document.write(`${newarr.length}`)
+    </script-->
+    
+
+</body>
+</html>

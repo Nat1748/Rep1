@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--script>
+        //Задача 1. Знайти суми елементів у вказаній області
+        var array = [
+            [3,7,9,12],
+            [4,8,6,16]
+        ]
+        function getSum(arr) {
+            let sum = 0
+            const LastRowIndex = arr.length/2
+            
+            for (let i = 0; i < LastRowIndex; i++) {
+                const ColIndex = arr[i].length/2
+                for (let j = 0; j < ColIndex; j++) {
+                    sum+=arr[i][j]
+                    
+                }
+                
+            }
+            return sum
+        }
+        document.write(`Сума заданої частини масиву дорівнює ${getSum(array)}`)
+    </script-->
+    <!--script>
+        //2
+        var array = [
+            [3,7,9,12],
+            [4,8,6,16]
+        ]
+        function getSum(arr) {
+            let sum = 0
+            const LastRowIndex = arr.length/2
+            
+            for (let i = 0; i < LastRowIndex; i++) {
+                const ColIndex = arr[i].length/2
+                for (let j = ColIndex; j < arr[i].length; j++) {
+                    sum+=arr[i][j]
+                    
+                }
+                
+            }
+            return sum
+        }
+        document.write(`Сума заданої частини масиву дорівнює ${getSum(array)}`)
+    </script-->
+    <!---script>
+        //3.
+        var array = [
+            [3,7,9,12],
+            [4,8,6,16]
+        ]
+        function getSum(arr) {
+            let sum = 0
+            const LastRowIndex = arr.length/2
+            
+            for (let i = LastRowIndex; i < arr.length; i++) {
+                const ColIndex = arr[i].length/2
+                for (let j = 0; j < ColIndex; j++) {
+                    sum+=arr[i][j]
+                    
+                }
+                
+            }
+            return sum
+        }
+        document.write(`Сума заданої частини масиву дорівнює ${getSum(array)}`)
+    </script--->
+    <!--script>
+        4.
+        var array = [
+            [3,7,9,12],
+            [4,8,6,16]
+        ]
+        function getSum(arr) {
+            let sum = 0
+            const LastRowIndex = arr.length/2
+            
+            for (let i = LastRowIndex; i < arr.length; i++) {
+                const ColIndex = arr[i].length/2
+                for (let j = ColIndex; j < arr[i].length; j++) {
+                    sum+=arr[i][j]
+                    
+                }
+                
+            }
+            return sum
+        }
+        document.write(`Сума заданої частини масиву дорівнює ${getSum(array)}`)
+    </script-->
+    <!--script>
+        //1) загальний прибуток кожного масиву за тиждень;
+        //2) загальний прибуток усіх магазинів кожного дня (загальний прибуток усіх магазинів за понеділок, за вівторок, і т.д.);
+        
+        function inputArr(shop, WeekDay) {
+            let arr = []
+            for (let i = 0; i < shop; i++) {
+                    let row = []
+                for (let j = 0; j < WeekDay; j++) {
+                    
+                    let el = parseFloat(prompt(`Введіть прибуток у ${i+1} магазині у ${j+1} день `))
+                    
+                    row.push(el)
+                }
+                
+                arr.push(row)
+            }
+            return arr
+        }
+        const WeekDay = 7
+        const shop = 2
+        var money = inputArr(shop,WeekDay)
+        
+        function getWeekProfitforShop1(arr) {
+            var sum=0
+            
+            for (let i = 0; i < arr.length/2; i++) {
+                for (let j = 0; j < arr[i].length; j++) {
+                    sum+=arr[i][j]
+                    
+                    
+                }
+                
+            }
+            return sum
+        }
+        function getWeekProfitforShop2(arr) {
+            var sum=0
+            
+            for (let i = arr.length/2; i < arr.length; i++) {
+                for (let j = 0; j < arr[i].length; j++) {
+                    sum+=arr[i][j]
+                    
+                    
+                }
+                
+            }
+            return sum
+        }
+
+    
+        var WeekProfit1 = getWeekProfitforShop1(money)
+        var WeekProfit2 = getWeekProfitforShop2(money)
+        document.write(`Прибуток першого магазина становить ${WeekProfit1}, а другого магазина становить ${WeekProfit2} `)
+
+
+        
+    </script-->
+    
+</body>
+</html>
